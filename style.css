@@ -1,0 +1,20 @@
+body {
+    background-color: #212529;
+    color: whitesmoke;
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+.fs-4 {
+    color: whitesmoke;
+}
+
+.nav-link {
+    color: whitesmoke;
+}
+
+.circular-image {
+    border-radius: 50%;
+}
