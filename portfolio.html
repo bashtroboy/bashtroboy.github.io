@@ -35,7 +35,8 @@
         <h1 class="display-4 fw-bold text-body-emphasis">Portfolio</h1>
         <div class="col-lg-6 mx-auto">
             <p class="lead mb-4">Here's a small sample of some of the projects, personal and professional, where I've been able to contribute code and features in a significant and meaningful way.</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5"></div>
+            <p class="lead mb-4">Of course this is just a small sample, if you'd like to see more visit my GitHub page.</p>
+            <a href="https://github.com/bashtroboy" target="_blank"><img src="images/github-mark-white.png" width="50" class="mb-4"><img></a>
         </div>
         <div class="overflow-hidden" style="max-height: 30vh;">
             <div class="container px-5">
@@ -51,7 +52,7 @@
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-          <!-- Start project tiles -->
+          <!-- Merchant Bug Tracker Tile -->
           <div class="col">
             <div class="card shadow-md">
               <img class="card-img-top" height="225" style="object-fit: cover;" src="images/portfolio_mbt.jpg"></img>
@@ -68,9 +69,9 @@
             </div>
           </div>
 
-          <!-- Modal -->
-          <div class="modal fade" id="mbtModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+          <!-- Merchant Bug Tracker Modal -->
+          <div class="modal fade" id="mbtModal" tabindex="-1" aria-labelledby="mbtModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="exampleModalLabel">Merchant Bug Tracker</h1>
@@ -78,11 +79,22 @@
                 </div>
                 <div class="modal-body">
                   <p class="card-text">This was an internal product purpose-built at Shopify to address a very significant problem, which was tracking and managing product defects reported by merchants through to resolution.</p>
+
+                  <h5 class="h5">Problem</h5>
+                  <p class="card-text">Every month, hundreds of product defects raised by merchants and validated by escalated support we reported.  Over half of these went to the wrong teams' GitHub repo (of which there were over 12,000), and very few of the rest were resolved in a time manner.</p>
+
+                  <h5 class="h5">Solution</h5>
+                  <p class="card-text">Over the course of four months, myself and three engineers designed, prototyped and built a new service from the ground up.  We had the research to understand the underlying problem, but undertook more research to understand the users' workflows and jobs to be done, both on the support (those reporting bugs) and R&D (those responsible for fixing bugs) side. </p>
+                  <p class="card-text">After laying out the clear vision and goal definition, we created a tech design and circulate for feedback amongst many stakeholders and engineers.  We created a prototype against the tech design over one sprint to get more feedback, and then torched it.  We then had everything to build and ship a solid solution within the next month.</p>
+
+                  <h5 class="h5">Impact</h5>
+                  <p class="card-text">When we shipped this new product, Support agents had a clear and intuitive UI to report bugs, automation ensure they were assigned to the right team and matching GitHub issues open in the right place, R&D teams had notifications and new SLAs helping them to resolution, and we finally had a data set for reporting that was complete and accurate.  Bug resolution within SLA times rose to +80%, and leadership had a clear picture of product quality health.</p>
                 </div>
               </div>
             </div>
           </div>
 
+          <!-- Cloud Conference Tile -->
           <div class="col">
             <div class="card shadow-sm">
               <img class="card-img-top" width="100%" height="225" style="object-fit: cover; object-position: top;" src="images/portfolio_cloud_conf.png"></img>
@@ -91,8 +103,8 @@
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#cloudModal">More</button>
+                        <a href="https://github.com/bashtroboy/rails-course-innovation-cloud" target="_blank" role="button" class="btn btn-sm btn-outline-secondary">Code</a>
                     </div>
                     <small class="text-body-secondary">Ruby and Rails</small>
                 </div>
@@ -100,17 +112,32 @@
             </div>
           </div>
 
+          <!-- Cloud Conference Modal -->
+          <div class="modal fade" id="cloudModal" tabindex="-1" aria-labelledby="cloudModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Conference Sign Up</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img class="card-img-top" width="100%" style="object-fit: cover; object-position: top;" src="images/portfolio_cloud_conf.png"></img>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Broadway Tile -->
           <div class="col">
             <div class="card shadow-sm">
               <img class="card-img-top" width="100%" height="225" style="object-fit: cover; object-position: top;" src="images/portfolio_broadway.png"></img>
               <div class="card-body">
                 <p class="display-10 fw-bold text-body-emphasis">Design Agency</p>
-                <p class="card-text">Another codecademy Rails project, this one providing a website for a design agency with full contact database.</p>
+                <p class="card-text">Another codecademy Rails project, this one providing a website for a design agency with database for capturing sign-ups.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">
-                        <a href="https://github.com/bashtroboy/rails-course-broadway">View</a>
-                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#broadwayModal">More</button>
+                    <a href="https://github.com/bashtroboy/rails-course-broadway" target="_blank" role="button" class="btn btn-sm btn-outline-secondary">Code</a>
                   </div>
                   <small class="text-body-secondary">Ruby and Rails</small>
                 </div>
@@ -118,6 +145,22 @@
             </div>
           </div>
 
+          <!-- Broadway Modal -->
+          <div class="modal fade" id="broadwayModal" tabindex="-1" aria-labelledby="broadwayModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Design Agency</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img class="card-img-top" width="100%" style="object-fit: cover; object-position: top;" src="images/portfolio_broadway.png"></img>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Movie Tile
           <div class="col">
             <div class="card shadow-sm">
               <img class="card-img-top" width="100%" height="225" src="images/portfolio_movie.png"></img>
@@ -126,27 +169,44 @@
                 <p class="card-text">A project part of the Codecademy Rails course, this is a Netflix-style movie title interactive browser.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">
-                          <a target="_blank" href="https://github.com/bashtroboy/rails-course-broadway">View</a>
-                      </button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">More</button>
+                      <a href="https://github.com/bashtroboy/rails-course-bolt-network" target="_blank" role="button" class="btn btn-sm btn-outline-secondary">Code</a>
                   </div>
-                    <small class="text-body-secondary">Ruby and Rails</small>
+                  <small class="text-body-secondary">Ruby and Rails</small>
                 </div>
               </div>
             </div>  
           </div>
+        -->
 
+        <!-- Korg Tile -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="card-img-top" width="100%" height="225" style="object-fit: cover; " src="images/korg-minilogue.jpeg"></img>
+            <div class="card-body">
+              <p class="display-10 fw-bold text-body-emphasis">Custom Synth Oscillator</p>
+              <p class="card-text">Using an SDK provided by Korg, I've been developing custom effects and oscillators for the Korg Minilogue Synthesizer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                      <a href="https://github.com/bashtroboy/korg-logue-oscillators" target="_blank" role="button" class="btn btn-sm btn-outline-secondary">Code</a>
+                  </div>
+                  <small class="text-body-secondary">C and C++</small>
+              </div>
+            </div>  
+          </div>
+        </div>
+
+          <!-- Advent of Code Tile -->
           <div class="col">
             <div class="card shadow-sm">
               <img class="card-img-top" width="100%" height="225" src="images/portfolio_aoc.png"></img>
               <div class="card-body">
                 <p class="display-10 fw-bold text-body-emphasis">Advent of Code</p>
-                <p class="card-text">I came 3rd in a team Advent of Code challenge completing most problems using pure Ruby.</p>
+                <p class="card-text">As part of a team challenge, I came 3rd in a team Advent of Code challenge completing most problems using pure Ruby.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">
-                        <a target="_blank" href="https://github.com/bashtroboy/rails-course-broadway">View</a>
-                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary"  data-bs-toggle="modal" data-bs-target="#aocModal">More</button>
+                    <a href="https://github.com/bashtroboy/advent_of_code" target="_blank" role="button" class="btn btn-sm btn-outline-secondary">Code</a>
                   </div>
                   <small class="text-body-secondary">Ruby</small>
                 </div>
@@ -154,19 +214,49 @@
             </div>
           </div>
 
+          <!-- AOC Modal -->
+          <div class="modal fade" id="aocModal" tabindex="-1" aria-labelledby="aocModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Advent of Code</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img class="card-img-top" width="100%" style="object-fit: cover; object-position: top;" src="images/portfolio_aoc.png"></img>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- WTF Tile -->
           <div class="col">
             <div class="card shadow-sm">
               <img class="card-img-top" width="100%" height="225" style="object-fit: cover; object-position: top;" src="images/portfolio_wtf.png"></img>
               <div class="card-body">
                 <p class="display-10 fw-bold text-body-emphasis">again.wtf</p>
-                <p class="card-text">I came 3rd in a team Advent of Code challenge completing most problems using pure Ruby.</p>
+                <p class="card-text">A site to analyze sentiment in human language queries using Google's Natural Language API, built and deployed in GCP.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">
-                        <a target="_blank" href="https://github.com/bashtroboy/rails-course-broadway">View</a>
-                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#wtfModal">More</button>
+                    <a href="https://github.com/bashtroboy/wtf" target="_blank" role="button" class="btn btn-sm btn-outline-secondary">Code</a>
                   </div>
                   <small class="text-body-secondary">Ruby, Rails, Google Cloud</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- WTF Modal -->
+          <div class="modal fade" id="wtfModal" tabindex="-1" aria-labelledby="wtfModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">again.wtf</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img class="card-img-top" width="100%" style="object-fit: cover; object-position: top;" src="images/portfolio_wtf.png"></img>
                 </div>
               </div>
             </div>
