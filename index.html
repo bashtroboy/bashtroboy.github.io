@@ -1,87 +1,355 @@
-<html data-bs-theme="dark">
+<!doctype html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Darren Hodder</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <title>Darren Hodder — Product Leader &amp; Developer</title>
+        <meta name="description" content="Darren Hodder: product leader and developer in Ottawa with 20+ years building enterprise and SaaS software.">
+        <meta name="theme-color" content="#0b0e14">
+        <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0e14'/%3E%3Ctext x='5' y='22' font-family='monospace' font-size='16' font-weight='700' fill='%237ee787'%3E&gt;_%3C/text%3E%3C/svg%3E">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-        <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-        <!-- Here's a link to my ENIGMA decoder, but the settings are somewhere else. 
-         https://enigma-627063238465.northamerica-northeast1.run.app/ 
+        <!-- Here's a link to my ENIGMA decoder, but the settings are somewhere else.
+         https://enigma-627063238465.northamerica-northeast1.run.app/
 
          DJNFL IKTJ -->
 
     </head>
     <body>
-        <div class="container">
-          <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <span class="fs-4 fw-bold">Darren Hodder</span>
-            </a>
-
-            <ul class="nav nav-pills">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="portfolio.html" class="nav-link">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="http://www.linkedin.com/in/darrenhodder/" class="nav-link" target="_blank">LinkedIn</a>
-                </li>
-            </ul>
-        </header>
-        </div>
-
-        <div class="px-4 py-5 text-center">
-            <img class="d-block mx-auto mb-4 circular-image" src="images/profile.jpg" alt="" width="50%">
-            <h1 class="display-5 fw-bold ">Hello!</h1>
-            <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4">I'm Darren, and I've been building meaningful software professionally since 2005.</p>
-                <p class="lead mb-4">What started as a passion for learning to code as a kid has turned into a career that has garnered experience across all aspects of the product lifecycle for Enterprise and SaaS products.</p>
-                <p class="lead mb-4">For more details on the impact I've made over the years, please visit my LinkedIn page via the link at the top, and view my portfolio.</p>
-              </div>
-        </div>
-
-        <div class="container px-4 py-5" id="hanging-icons">
-            <h2 class="pb-2 border-bottom">My Crafts</h2>
-            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                <div class="col d-flex align-items-start">
-                    <div class="icon-square text-body-emphasis fs-4 me-3">
-                        <div class="mt-2">
-                            <i class="bi-compass"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="fs-2 text-body-emphasis">Product</h3>
-                        <p>I have over 10 years of experience in a product leadership role, digging deep to find valuable problems to solve with meaningful products and solutions in both enterprise and SaaS spaces.</p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-start">
-                    <div class="icon-square text-body-emphasis fs-4 me-3">
-                        <div class="mt-2">
-                            <i class="bi-code-slash pt-5"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="fs-2 text-body-emphasis">Development</h3>
-                        <p>My career started as a developer, but even when I moved into other roles, I stayed close to the code.  I embed myself in every team, pushing code where I can.</p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-start">
-                    <div class="icon-square text-body-emphasis fs-4 me-3">
-                        <div class="mt-2">
-                            <i class="bi-emoji-heart-eyes"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="fs-2 text-body-emphasis">UX</h3>
-                        <p>I pursued Akendi certification in UX research while building a UX team.  I can attest to the value UX best practices bring to product ideation and development.</p>
-                    </div>
-                </div>
+        <header class="topbar">
+            <div class="wrap topbar-inner">
+                <a href="#top" class="brand"><span class="accent">~/</span>darren<span class="cursor" aria-hidden="true"></span></a>
+                <nav aria-label="Primary">
+                    <ul class="nav">
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#experience">experience</a></li>
+                        <li><a href="#projects">projects</a></li>
+                        <li><a href="#skills">skills</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
+        </header>
+
+        <main id="top">
+            <!-- Hero -->
+            <section class="hero wrap">
+                <div class="hero-copy">
+                    <p class="eyebrow">Ottawa, ON · Canada</p>
+                    <h1>Darren Hodder</h1>
+                    <p class="tagline">Product leader who still ships code.</p>
+                    <p class="lede">I've been building software professionally since 2005, as a developer, product manager, UX lead and now head of product. I care about secure, well-made tools and about Canadian technology and data sovereignty.</p>
+                    <div class="cta">
+                        <a class="btn btn-primary" href="#experience">View experience</a>
+                        <a class="btn" href="https://www.linkedin.com/in/darrenhodder/" target="_blank" rel="noopener">LinkedIn ↗</a>
+                        <a class="btn" href="https://github.com/bashtroboy" target="_blank" rel="noopener">GitHub ↗</a>
+                    </div>
+                </div>
+
+                <div class="terminal" aria-label="Terminal summary">
+                    <div class="terminal-bar">
+                        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                        <span class="terminal-title">darren@ravenblack: ~</span>
+                    </div>
+<pre class="terminal-body"><code><span class="prompt">$</span> whoami
+darren.hodder
+
+<span class="prompt">$</span> cat role.txt
+Head of Product @ Ravenblack / Atomic Meridian
+
+<span class="prompt">$</span> ls ~/career
+<span class="dir">developer/</span>  <span class="dir">pre-sales/</span>  <span class="dir">product/</span>
+<span class="dir">ux/</span>         <span class="dir">tpm/</span>        <span class="dir">ai/</span>
+
+<span class="prompt">$</span> uptime
+20+ years, load average: high
+<span class="prompt">$</span> <span class="cursor" aria-hidden="true"></span></code></pre>
+                </div>
+            </section>
+
+            <!-- Stats -->
+            <section class="wrap stats" aria-label="Highlights">
+                <div class="stat"><span class="stat-num">20+</span><span class="stat-label">years building enterprise &amp; SaaS software</span></div>
+                <div class="stat"><span class="stat-num">10×</span><span class="stat-label">license revenue growth, $200K → $2M+ at OpenText</span></div>
+                <div class="stat"><span class="stat-num">38%</span><span class="stat-label">fewer unnecessary support conversations with ML at Shopify</span></div>
+                <div class="stat"><span class="stat-num">40%</span><span class="stat-label">faster shipping after building a UX practice</span></div>
+            </section>
+
+            <!-- About -->
+            <section id="about" class="wrap section">
+                <h2 class="section-title"><span class="num">01.</span> about</h2>
+                <div class="about-grid">
+                    <div class="prose">
+                        <p>What started as a kid learning to code turned into a career across every part of the product lifecycle. I started as a developer at a Hamilton start-up, moved through support and technical pre-sales, ran product for OpenText's Content Intelligence suite, and spent five years at Shopify in product, UX and technical program management.</p>
+                        <p>Today I'm Head of Product at Ravenblack / Atomic Meridian. I own the AI portfolio and strategy, and we've shipped an AI-powered UI designer and code-generation tools alongside developer and administrator tooling for OpenText Content Server.</p>
+                        <p>Away from work I'm usually combining data with electronics and radio. I'm a licensed amateur radio operator, I write custom oscillators for a Korg synth, and I served as a MARS officer in the Royal Canadian Navy reserve.</p>
+                    </div>
+                    <ul class="crafts">
+                        <li>
+                            <h3><span class="accent">&gt;</span> product</h3>
+                            <p>10+ years leading product in enterprise and SaaS, from strategy and roadmap through launch and lifecycle.</p>
+                        </li>
+                        <li>
+                            <h3><span class="accent">&gt;</span> development</h3>
+                            <p>I started as a developer and stayed close to the code. I join teams and push code where I can.</p>
+                        </li>
+                        <li>
+                            <h3><span class="accent">&gt;</span> ux</h3>
+                            <p>Akendi-certified UX researcher. I built a UX team from scratch and saw firsthand what it does for product quality.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Experience -->
+            <section id="experience" class="wrap section">
+                <h2 class="section-title"><span class="num">02.</span> experience</h2>
+
+                <ol class="timeline">
+                    <li class="job">
+                        <div class="job-meta">
+                            <span class="job-date">2023 — present</span>
+                            <span class="job-loc">Ottawa, ON</span>
+                        </div>
+                        <div class="job-body">
+                            <h3>Head of Product / Owner <span class="at">@ Ravenblack / Atomic Meridian</span></h3>
+                            <ul>
+                                <li>Owner and sole contributor of the AI portfolio and strategy. Delivered an AI-powered user interface designer and code-generating tools.</li>
+                                <li>Productized the existing portfolio and took it to market with a complete product lifecycle management programme.</li>
+                                <li>Built and launched developer and administrator tools for OpenText's Content Server ECM platform.</li>
+                                <li>Introduced code management practices and a CI/CD pipeline.</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="job">
+                        <div class="job-meta">
+                            <span class="job-date">2018 — 2023</span>
+                            <span class="job-loc">Ottawa, ON</span>
+                        </div>
+                        <div class="job-body">
+                            <h3>Shopify</h3>
+                            <div class="role">
+                                <h4>Technical Program Manager <span class="role-date">2022 — 2023</span></h4>
+                                <ul>
+                                    <li>Defined the vision and technology path for a year-long program to improve performance of the core Shopify platform, which led to a new data strategy and collection platform for measuring merchant and customer performance.</li>
+                                    <li>Set goals and metrics, secured executive buy-in, shipped the first data instrumentation and set the long-term roadmap.</li>
+                                </ul>
+                            </div>
+                            <div class="role">
+                                <h4>Manager, Technical Programs <span class="role-date">2021 — 2022</span></h4>
+                                <ul>
+                                    <li>Led 4 engineers as product owner to research, design and build a new internal product for managing merchant-reported defects.</li>
+                                    <li>Shipped production Ruby on Rails features on the front and back end, including data models and the bug submission UI.</li>
+                                    <li>Rewrote the product playbook for 100+ crafters building internal tooling, and trained them on agile and product practices.</li>
+                                </ul>
+                            </div>
+                            <div class="role">
+                                <h4>User Experience Manager <span class="role-date">2019 — 2021</span></h4>
+                                <ul>
+                                    <li>Built a team of four UX researchers and designers for a 50+ person R&amp;D org, and set clear guidelines for developers.</li>
+                                    <li>Teams adopted UX principles and shipped new features and products 40% faster.</li>
+                                </ul>
+                            </div>
+                            <div class="role">
+                                <h4>Senior Product Manager, Support Technology <span class="role-date">2018 — 2019</span></h4>
+                                <ul>
+                                    <li>First product manager on a 30-engineer internal tooling team, owning all merchant self-help products.</li>
+                                    <li>Led new ML products that map merchants' support journeys to the best resolution. They cut unnecessary advisor conversations by 38% across thousands of daily interactions, saving $14 per avoided conversation.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="job">
+                        <div class="job-meta">
+                            <span class="job-date">2012 — 2018</span>
+                            <span class="job-loc">Ottawa, ON · Cardiff, UK</span>
+                        </div>
+                        <div class="job-body">
+                            <h3>OpenText</h3>
+                            <div class="role">
+                                <h4>Product Manager, Content Intelligence <span class="role-date">2014 — 2018</span></h4>
+                                <ul>
+                                    <li>Owned the full lifecycle of Content Intelligence, a suite for tailoring and customizing OpenText Content Server.</li>
+                                    <li>Shipped quarterly releases on roadmap and grew license revenue more than 10% year over year, from $200K to over $2M annually.</li>
+                                </ul>
+                            </div>
+                            <div class="role">
+                                <h4>Senior Solutions Consultant / Technical Pre-Sales <span class="role-date">2012 — 2014</span></h4>
+                                <ul>
+                                    <li>The sales team's sole technical member. Built custom demos and solutions that closed over $1M in enterprise deals.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="job">
+                        <div class="job-meta">
+                            <span class="job-date">2005 — 2012</span>
+                            <span class="job-loc">Hamilton, ON · Cardiff, UK</span>
+                        </div>
+                        <div class="job-body">
+                            <h3>Resonate Knowledge Technologies <span class="at">(acquired by OpenText)</span></h3>
+                            <div class="role">
+                                <h4>Support Manager <span class="role-date">2009 — 2012</span></h4>
+                                <ul>
+                                    <li>Built a custom support system and issue tracker, defined SLAs and standard operating procedures, and improved quality for 100+ customers.</li>
+                                </ul>
+                            </div>
+                            <div class="role">
+                                <h4>Developer <span class="role-date">2005 — 2009</span></h4>
+                                <ul>
+                                    <li>Shipped full-stack features (client UI, server-side rendering and database layer) for what became OpenText Content Intelligence, using OScript and OpenText's SDK.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="job">
+                        <div class="job-meta">
+                            <span class="job-date">2002 — 2005</span>
+                            <span class="job-loc">Hamilton, ON</span>
+                        </div>
+                        <div class="job-body">
+                            <h3>MARS Officer <span class="at">@ Royal Canadian Navy (Reserve)</span></h3>
+                            <ul>
+                                <li>Maritime Surface and Sub-surface officer focused on navigation and leadership.</li>
+                                <li>Regular participant in PAXSims simulation-based conflict and peacekeeping scenarios.</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- Projects -->
+            <section id="projects" class="wrap section">
+                <h2 class="section-title"><span class="num">03.</span> projects</h2>
+                <p class="section-intro">Personal and professional projects where I wrote real code and features. There's more on <a href="https://github.com/bashtroboy" target="_blank" rel="noopener">GitHub</a>.</p>
+
+                <div class="projects">
+                    <article class="card">
+                        <img src="images/portfolio_mbt.jpg" alt="" loading="lazy">
+                        <div class="card-body">
+                            <h3>Merchant Bug Tracker</h3>
+                            <p>An internal Shopify product for tracking merchant-reported defects to resolution. Three engineers and I built it from the ground up in four months.</p>
+                            <details>
+                                <summary>Read the case study</summary>
+                                <h4>Problem</h4>
+                                <p>Every month, support escalated hundreds of validated merchant defects. Over half went to the wrong team's GitHub repo (there were more than 12,000), and few of the rest were resolved on time.</p>
+                                <h4>Solution</h4>
+                                <p>We did more research on the workflows and jobs to be done on both sides: support, who report bugs, and R&amp;D, who fix them. We wrote a tech design, circulated it for feedback, built a one-sprint prototype to learn from and then threw it away. Then we built and shipped the real thing within a month.</p>
+                                <h4>Impact</h4>
+                                <p>Support got a clear UI for reporting bugs. Automation routed each one to the right team and opened a matching GitHub issue. R&amp;D got notifications and SLAs, and leadership got complete, accurate quality data. Resolution within SLA rose above 80%.</p>
+                            </details>
+                            <ul class="tags"><li>React</li><li>Ruby on Rails</li></ul>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="images/portfolio_wtf.png" alt="" loading="lazy">
+                        <div class="card-body">
+                            <h3>again.wtf</h3>
+                            <p>A site that analyzes sentiment in natural-language queries with Google's Natural Language API. Built and deployed on GCP.</p>
+                            <ul class="tags"><li>Ruby on Rails</li><li>Google Cloud</li></ul>
+                            <a class="card-link" href="https://github.com/bashtroboy/wtf" target="_blank" rel="noopener">view source ↗</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="images/korg-minilogue.jpeg" alt="" loading="lazy">
+                        <div class="card-body">
+                            <h3>Custom Synth Oscillators</h3>
+                            <p>Custom effects and oscillators for the Korg Minilogue synthesizer, written with Korg's logue SDK.</p>
+                            <ul class="tags"><li>C</li><li>C++</li><li>DSP</li></ul>
+                            <a class="card-link" href="https://github.com/bashtroboy/korg-logue-oscillators" target="_blank" rel="noopener">view source ↗</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="images/portfolio_aoc.png" alt="" loading="lazy">
+                        <div class="card-body">
+                            <h3>Advent of Code</h3>
+                            <p>Placed 3rd in a team Advent of Code challenge, solving most puzzles in pure Ruby.</p>
+                            <ul class="tags"><li>Ruby</li></ul>
+                            <a class="card-link" href="https://github.com/bashtroboy/advent_of_code" target="_blank" rel="noopener">view source ↗</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="images/portfolio_cloud_conf.png" alt="" loading="lazy">
+                        <div class="card-body">
+                            <h3>Conference Sign Up</h3>
+                            <p>A Rails site for a cloud innovation conference that collects attendee sign-ups in a database.</p>
+                            <ul class="tags"><li>Ruby on Rails</li></ul>
+                            <a class="card-link" href="https://github.com/bashtroboy/rails-course-innovation-cloud" target="_blank" rel="noopener">view source ↗</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="images/portfolio_broadway.png" alt="" loading="lazy">
+                        <div class="card-body">
+                            <h3>Design Agency</h3>
+                            <p>A website for a design agency with a database for capturing sign-ups.</p>
+                            <ul class="tags"><li>Ruby on Rails</li></ul>
+                            <a class="card-link" href="https://github.com/bashtroboy/rails-course-broadway" target="_blank" rel="noopener">view source ↗</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section id="skills" class="wrap section">
+                <h2 class="section-title"><span class="num">04.</span> skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-group">
+                        <h3>product</h3>
+                        <ul class="tags"><li>Product strategy</li><li>Roadmapping</li><li>Lifecycle management</li><li>Go-to-market</li><li>Data-driven decisions</li></ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>delivery</h3>
+                        <ul class="tags"><li>Technical program management</li><li>Agile / Scrum</li><li>CI/CD</li><li>Team leadership</li></ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>engineering</h3>
+                        <ul class="tags"><li>Ruby</li><li>Rails</li><li>React</li><li>C / C++</li><li>OScript</li><li>Google Cloud</li></ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>ai &amp; ux</h3>
+                        <ul class="tags"><li>AI strategy</li><li>Code generation tooling</li><li>ML products</li><li>UX research</li></ul>
+                    </div>
+                </div>
+
+                <h3 class="sub-title">education &amp; certifications</h3>
+                <ul class="certs">
+                    <li><span class="cert-year">2005</span><span><strong>B.A., Mathematics &amp; Physics</strong> · McMaster University</span></li>
+                    <li><span class="cert-year">2019</span><span><strong>User Experience Researcher</strong> · Akendi</span></li>
+                    <li><span class="cert-year">2018</span><span><strong>Certified Scrum Product Owner &amp; Scrum Master</strong> · Scrum Alliance</span></li>
+                    <li><span class="cert-year">2015</span><span><strong>Level III Product Management</strong> · Pragmatic Marketing</span></li>
+                    <li><span class="cert-year">—</span><span><strong>Amateur Radio Operator</strong> · ISED Canada</span></li>
+                </ul>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact" class="wrap section contact">
+                <h2 class="section-title"><span class="num">05.</span> contact</h2>
+                <p class="contact-lede">Want to talk product, AI tooling, or Canadian tech? Let's connect.</p>
+                <div class="cta">
+                    <a class="btn btn-primary" href="https://www.linkedin.com/in/darrenhodder/" target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
+                    <a class="btn" href="https://github.com/bashtroboy" target="_blank" rel="noopener">github.com/bashtroboy ↗</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="wrap footer">
+            <span>© <span id="year">2026</span> Darren Hodder</span>
+            <span class="muted">Hand-written HTML &amp; CSS. No frameworks.</span>
+        </footer>
+
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
     </body>
 </html>
