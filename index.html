@@ -45,7 +45,7 @@
                     <p class="eyebrow">Ottawa, ON · Canada</p>
                     <h1>Darren Hodder</h1>
                     <p class="tagline">Product leader who still ships code.</p>
-                    <p class="lede">I've been building software professionally since 2005, as a developer, product manager, UX lead and now head of product. I care about secure, well-made tools and about Canadian technology and data sovereignty.</p>
+                    <p class="lede">I've been building software professionally since 2005, as a developer, product manager, UX lead, head of product and now AI developer. I care about secure, well-made tools and about Canadian technology and data sovereignty.</p>
                     <div class="cta">
                         <a class="btn btn-primary" href="#experience">View experience</a>
                         <a class="btn" href="https://www.linkedin.com/in/darrenhodder/" target="_blank" rel="noopener">LinkedIn ↗</a>
@@ -62,7 +62,7 @@
 darren.hodder
 
 <span class="prompt">$</span> cat role.txt
-Head of Product @ Ravenblack / Atomic Meridian
+Head of Product / AI Developer @ Ravenblack
 
 <span class="prompt">$</span> ls ~/career
 <span class="dir">developer/</span>  <span class="dir">pre-sales/</span>  <span class="dir">product/</span>
@@ -88,7 +88,7 @@ Head of Product @ Ravenblack / Atomic Meridian
                 <div class="about-grid">
                     <div class="prose">
                         <p>What started as a kid learning to code turned into a career across every part of the product lifecycle. I started as a developer at a Hamilton start-up, moved through support and technical pre-sales, ran product for OpenText's Content Intelligence suite, and spent five years at Shopify in product, UX and technical program management.</p>
-                        <p>Today I'm Head of Product at Ravenblack / Atomic Meridian. I own the AI portfolio and strategy, and we've shipped an AI-powered UI designer and code-generation tools alongside developer and administrator tooling for OpenText Content Server.</p>
+                        <p>Today I'm Head of Product and AI Developer at Ravenblack. I design and build our AI portfolio, including <a href="#raive">RaiVE</a>, a RAG-powered assistant that writes production-ready code for OpenText Content Server, alongside our developer and administrator tooling.</p>
                         <p>Away from work I'm usually combining data with electronics and radio. I'm a licensed amateur radio operator, I write custom oscillators for a Korg synth, and I served as a MARS officer in the Royal Canadian Navy reserve.</p>
                     </div>
                     <ul class="crafts">
@@ -119,9 +119,9 @@ Head of Product @ Ravenblack / Atomic Meridian
                             <span class="job-loc">Ottawa, ON</span>
                         </div>
                         <div class="job-body">
-                            <h3>Head of Product / Owner <span class="at">@ Ravenblack / Atomic Meridian</span></h3>
+                            <h3>Head of Product / AI Developer <span class="at">@ Ravenblack</span></h3>
                             <ul>
-                                <li>Owner and sole contributor of the AI portfolio and strategy. Delivered an AI-powered user interface designer and code-generating tools.</li>
+                                <li>Sole developer of the AI portfolio and strategy. Designed and built <a href="#raive">RaiVE</a>, a multi-tenant RAG platform that answers questions and generates code grounded in Ravenblack and OpenText documentation, plus an AI-powered user interface designer.</li>
                                 <li>Productized the existing portfolio and took it to market with a complete product lifecycle management programme.</li>
                                 <li>Built and launched developer and administrator tools for OpenText's Content Server ECM platform.</li>
                                 <li>Introduced code management practices and a CI/CD pipeline.</li>
@@ -234,6 +234,73 @@ Head of Product @ Ravenblack / Atomic Meridian
                 <h2 class="section-title"><span class="num">03.</span> projects</h2>
                 <p class="section-intro">Personal and professional projects where I wrote real code and features. There's more on <a href="https://github.com/bashtroboy" target="_blank" rel="noopener">GitHub</a>.</p>
 
+                <article id="raive" class="feature">
+                    <div class="feature-copy">
+                        <p class="eyebrow">Featured · Ravenblack</p>
+                        <h3>RaiVE</h3>
+                        <p>An AI assistant for OpenText Content Server developers. Describe what you need in plain language and RaiVE writes production-ready WebReports, LiveReport SQL and widgets, with security, performance and deployment notes. Then push the result straight into Content Server.</p>
+                        <ul class="feature-points">
+                            <li>Retrieval-augmented answers grounded in product docs, with source attribution</li>
+                            <li>Multi-model: Gemini and Claude, selectable per request</li>
+                            <li>Multi-tenant API with keys, quotas, usage analytics and an admin portal</li>
+                            <li>One-click push of generated code into Content Server</li>
+                        </ul>
+                        <ul class="tags"><li>RAG</li><li>Vertex AI</li><li>Node.js</li><li>PostgreSQL + pgvector</li><li>Google Cloud</li></ul>
+                        <button type="button" class="btn btn-primary" data-open-demo>▶ Watch the 70-second demo</button>
+                    </div>
+
+                    <div class="carousel" aria-roledescription="carousel" aria-label="RaiVE screenshots">
+                        <div class="terminal-bar">
+                            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                            <span class="terminal-title" data-carousel-title>raive — 1/8</span>
+                        </div>
+                        <div class="carousel-track" tabindex="0">
+                            <figure class="slide" aria-roledescription="slide" aria-label="1 of 8">
+                                <img src="images/raive_1_prompt.jpg" alt="RaiVE chat with a prompt asking for a WebReport with three charts" loading="lazy" width="1600" height="931">
+                                <figcaption><span class="accent">01</span> Ask in plain language: a three-chart WebReport dashboard.</figcaption>
+                            </figure>
+                            <figure class="slide" aria-roledescription="slide" aria-label="2 of 8">
+                                <img src="images/raive_2_response.jpg" alt="RaiVE response with testing, deployment, security and performance notes" loading="lazy" width="1600" height="931">
+                                <figcaption><span class="accent">02</span> Code plus testing, security and performance guidance.</figcaption>
+                            </figure>
+                            <figure class="slide" aria-roledescription="slide" aria-label="3 of 8">
+                                <img src="images/raive_3_push.jpg" alt="Push Code to Content Server dialog" loading="lazy" width="1600" height="931">
+                                <figcaption><span class="accent">03</span> Push the generated code straight to Content Server.</figcaption>
+                            </figure>
+                            <figure class="slide" aria-roledescription="slide" aria-label="4 of 8">
+                                <img src="images/raive_4_analyzer.jpg" alt="The generated WebReport source shown in applicationANALYZER" loading="lazy" width="1600" height="931">
+                                <figcaption><span class="accent">04</span> The new WebReport, inspected in applicationANALYZER.</figcaption>
+                            </figure>
+                            <figure class="slide" aria-roledescription="slide" aria-label="5 of 8">
+                                <img src="images/raive_5_content_server.jpg" alt="The AI-generated widget listed in a Content Server folder" loading="lazy" width="1600" height="931">
+                                <figcaption><span class="accent">05</span> Live in Content Server, ready to use.</figcaption>
+                            </figure>
+                            <figure class="slide" aria-roledescription="slide" aria-label="6 of 8">
+                                <img src="images/raive_6_admin_query_logs.jpg" alt="RaiVE admin Query Viewer showing logged questions, answers, latency, tokens and sources" loading="lazy" width="1600" height="931">
+                                <figcaption><span class="accent">06</span> Admin: every query logged with latency, tokens and sources.</figcaption>
+                            </figure>
+                            <figure class="slide" aria-roledescription="slide" aria-label="7 of 8">
+                                <img src="images/raive_7_admin_test_runner.jpg" alt="RaiVE admin Test Runner for automated RAG tests with recent pass and fail results" loading="lazy" width="1600" height="931">
+                                <figcaption><span class="accent">07</span> Admin: automated RAG test suites against each prompt version.</figcaption>
+                            </figure>
+                            <figure class="slide" aria-roledescription="slide" aria-label="8 of 8">
+                                <img src="images/raive_8_admin_usage_dashboard.jpg" alt="RaiVE admin Usage Dashboard with request, token, quota and latency metrics" loading="lazy" width="1600" height="931">
+                                <figcaption><span class="accent">08</span> Admin: usage, tokens and quota across customers.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-controls">
+                            <button type="button" class="carousel-btn" data-dir="-1" aria-label="Previous screenshot">←</button>
+                            <div class="carousel-dots" role="group" aria-label="Choose screenshot"></div>
+                            <button type="button" class="carousel-btn" data-dir="1" aria-label="Next screenshot">→</button>
+                        </div>
+                    </div>
+                </article>
+
+                <dialog class="demo-dialog" aria-label="RaiVE demo video">
+                    <form method="dialog"><button class="carousel-btn demo-close" aria-label="Close video">✕</button></form>
+                    <video src="images/raive_demo.mp4" poster="images/raive_1_prompt.jpg" controls muted playsinline preload="none"></video>
+                </dialog>
+
                 <div class="projects">
                     <article class="card">
                         <img src="images/portfolio_mbt.jpg" alt="" loading="lazy">
@@ -323,7 +390,7 @@ Head of Product @ Ravenblack / Atomic Meridian
                     </div>
                     <div class="skill-group">
                         <h3>ai &amp; ux</h3>
-                        <ul class="tags"><li>AI strategy</li><li>Code generation tooling</li><li>ML products</li><li>UX research</li></ul>
+                        <ul class="tags"><li>AI strategy</li><li>RAG &amp; vector search</li><li>LLM integration</li><li>Code generation tooling</li><li>ML products</li><li>UX research</li></ul>
                     </div>
                 </div>
 
@@ -355,6 +422,67 @@ Head of Product @ Ravenblack / Atomic Meridian
 
         <script>
             document.getElementById('year').textContent = new Date().getFullYear();
+
+            // RaiVE screenshot carousel
+            (function () {
+                const root = document.querySelector('.carousel');
+                if (!root) return;
+                const track = root.querySelector('.carousel-track');
+                const slides = [...track.children];
+                const dotsBox = root.querySelector('.carousel-dots');
+                const title = root.querySelector('[data-carousel-title]');
+                let index = 0;
+
+                const dots = slides.map((_, i) => {
+                    const b = document.createElement('button');
+                    b.type = 'button';
+                    b.className = 'carousel-dot';
+                    b.setAttribute('aria-label', 'Screenshot ' + (i + 1));
+                    b.addEventListener('click', () => go(i));
+                    dotsBox.appendChild(b);
+                    return b;
+                });
+
+                function render(i) {
+                    index = i;
+                    dots.forEach((d, j) => d.setAttribute('aria-current', j === i ? 'true' : 'false'));
+                    title.textContent = 'raive — ' + (i + 1) + '/' + slides.length;
+                }
+
+                function go(i) {
+                    i = (i + slides.length) % slides.length;
+                    track.scrollTo({ left: slides[i].offsetLeft - track.offsetLeft, behavior: 'smooth' });
+                    render(i);
+                }
+
+                root.querySelectorAll('[data-dir]').forEach(b =>
+                    b.addEventListener('click', () => go(index + Number(b.dataset.dir))));
+
+                track.addEventListener('keydown', e => {
+                    if (e.key === 'ArrowRight') { e.preventDefault(); go(index + 1); }
+                    if (e.key === 'ArrowLeft') { e.preventDefault(); go(index - 1); }
+                });
+
+                // Keep dots in sync when the user swipes
+                let t;
+                track.addEventListener('scroll', () => {
+                    clearTimeout(t);
+                    t = setTimeout(() => render(Math.round(track.scrollLeft / track.clientWidth)), 80);
+                });
+
+                render(0);
+            })();
+
+            // RaiVE demo video
+            (function () {
+                const dialog = document.querySelector('.demo-dialog');
+                const open = document.querySelector('[data-open-demo]');
+                if (!dialog || !open || !dialog.showModal) return;
+                const video = dialog.querySelector('video');
+                open.addEventListener('click', () => { dialog.showModal(); video.play().catch(() => {}); });
+                dialog.addEventListener('close', () => video.pause());
+                dialog.addEventListener('click', e => { if (e.target === dialog) dialog.close(); });
+            })();
         </script>
     </body>
 </html>
