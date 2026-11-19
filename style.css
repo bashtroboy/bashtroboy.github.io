@@ -979,3 +979,12 @@ details p {
         transition: none;
     }
 }
+
+.card p code {
+    font-family: var(--mono);
+    font-size: 0.85em;
+    color: var(--accent);
+    background: var(--accent-dim);
+    padding: 1px 5px;
+    border-radius: 4px;
+}
